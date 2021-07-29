@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:  #2d142c;
+}
+
+/* ****************nav******************* */
+
+.navbar{
+    width: 390px;
+    height: 590px;
+    background-color: #510a32;
+    border-radius: 30px 1px 1px 30px;
+    box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.4);
+    border-right: 5px solid #c72c41;
+    color:#fff;
+    font-size: 1.5rem;
+    position: relative;
+}
+/* *******************Margin********************* */
+.contents{
+  
+    padding: 0.75rem;
+
+}
+
+/* ***************************elements content********************* */
+
+.content_els{
+    display: flex;
+    padding: 1.5rem;
+    cursor: pointer;
+   
+    
+}
+.content_els span{
+    padding-left: 50px;
+}
+
+.content_els:hover{
+    background-color: #c72c41;
+    width: 358px;
+    border-radius: 20px 1px 1px 20px;
+}
+
+/* *********Icon********************* */
+
+.icon_bottom{
+    width: 50px;
+    height: 50px;
+    background-color: #c72c41;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.collapse{
+    width: 90px;
+    overflow: hidden;
+}
+.navbar.collapse .icon_bottom{
+    transform: rotateZ(180deg);
+
+}
+.els-hover.content_els{
+    background-color: #c72c41;
+    width: 370px;
+    border-radius: 20px 1px 1px 20px;
+}
+.content_els:focus{
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+    
+}
+button.selected .els-hover{
+    background-color: #c72c41;
+    border-radius: 20px;
+    width: 370px;
+}
